@@ -14,21 +14,35 @@
     width: auto;
     height: auto;
 }
-.Login{
 
+.Login{
+    margin-top: 100px;
+}
+.SignUp{
+    margin-top: 100px;
 }
 .username{
+    width: 250px;
+    height: 25px;
     border-radius: 15px
 }
 .password{
+    width: 250px;
+    height: 25px;
     margin-top: 10px;
     border-radius: 15px;
 }
 .LoginButton{
-    margin-left: 280px;
+    margin-left: 200px;
     margin-top:5px;
     background-color: royalblue;
     border-radius: 10px;
     width: 90px;
     font-size: 15px;
+}
+
+.form{
+    justify-content: center;
+    align-items: center;
+
 }

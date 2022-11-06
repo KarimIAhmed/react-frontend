@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import logo from './JooleLogo.png'
+import Header from "./Header";
 class Login extends Component {
     render() {
         return (
             <div className="Login">
+                <Header/>
                 <img  className="Logo" src={logo} alt="Logo" />
                 <form>
                 <div>

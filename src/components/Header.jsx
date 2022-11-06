@@ -4,7 +4,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-               <a href="https://www.google.com">
+               <a href="/signup">
                    <button className="button">Sign up</button>
                </a>
             </div>
