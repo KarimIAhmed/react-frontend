@@ -1,15 +1,17 @@
 import './App.css';
-// import Header from './components/Header'
+// import HeaderComponent from './components/HeaderComponent'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import LoginComponent from "./components/LoginComponent";
+import SignUpComponent from "./components/SignUpComponent";
+import SearchComponent from "./components/SearchComponent";
 function App() {
   return (
     <div className="App">
         <Router>
             <Routes>
-                <Route exact path="/" element={<Login/>}/>
-                <Route exact path="/signup" element={<SignUp/>}/>
+                <Route exact path="/" element={<LoginComponent/>}/>
+                <Route exact path="/signup" element={<SignUpComponent/>}/>
+                <Route exact path="/search" element={<SearchComponent/>}/>
             </Routes>
         </Router>
 
