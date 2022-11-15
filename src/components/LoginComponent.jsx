@@ -2,7 +2,7 @@
 import React, {Component, useState} from 'react';
 import {NavLink, Redirect, useNavigate} from 'react-router-dom';
 
-import logo from './JooleLogo.png'
+import logo from './images/JooleLogo.png'
 import HeaderComponent from "./HeaderComponent";
 
 import axios from "axios";
@@ -28,10 +28,11 @@ import axios from "axios";
         }).then(function (response){
             console.log(response.data)
             localStorage.setItem('token',response.data)
+            setTimeout(navigate('/search'),3000);
         }).catch(function (error){
+            alert("Username or Password are incorrect, please try again")
             console.log(error)
         });
-        setTimeout(navigate('/search'),3000);
     }
     return (
         <div className="Login">

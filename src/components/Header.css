@@ -50,3 +50,177 @@
     align-items: center;
 
 }
+
+.Select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+float: left;
+}
+.search-input{
+float: right;
+}
+
+
+.dropdown-list{
+    width:5px;
+    cursor: pointer;
+    list-style: none;
+    border:1px solid transparent;
+    bottom:-2rem
+}
+.dropdown-list.hover{
+    border:1px solid white;
+}
+
+
+
+body {
+    font: 16px Arial;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+/*input {*/
+/*    border: 1px solid transparent;*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*input[type=text] {*/
+/*    background-color: white;*/
+/*    width: 100%;*/
+/*}*/
+
+/*input[type=submit] {*/
+/*    background-color: DodgerBlue;*/
+/*    color: #fff;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: grey;
+}
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: grey !important;
+    color: #ffffff;
+}
+
+.header{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+
+.header .profilePicture{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.header .menu{
+    color: black;
+    position: absolute;
+    top:80px;
+    right:-10px;
+    padding: 10px 20px;
+    background: white;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.header .menu::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    width:20px;
+    background: white;
+    transform: rotate(45deg);
+
+}
+.header .menu.active{
+    visibility: visible;
+    opacity: 1;
+}
+.header .menu button{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.autocomplete {
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+
+.autocomplete input {
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.suggestions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #d4d4d4;
+    background-color: darkgray;
+    border-radius: 0 0 10px 10px;
+}
+
+.suggestions li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.autocomplete li:hover {
+    background-color: #d4d4d4;
+}
+
+
+
+

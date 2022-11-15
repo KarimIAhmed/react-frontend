@@ -3,7 +3,8 @@ import './Header.css';
 class HeaderComponent extends Component {
     render() {
         return (
-            <div className="header">
+            <div className="headerr">
+                
                <a href="/signup">
                    <button className="button">Sign up</button>
                </a>
