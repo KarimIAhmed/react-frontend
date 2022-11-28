@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import HeaderComponent from "./HeaderComponent";
 import logo from "./images/JooleLogo.png";
 import axios from "axios";
@@ -25,6 +25,7 @@ const handleSubmit=async (e)=>{
     }
  }).then(function (response){
    console.log(response)
+     alert("user sucessfully created!")
      setTimeout(navigate('/'),3000);
  }).catch(function (error){
      alert("email already in use, please try logging in!");
